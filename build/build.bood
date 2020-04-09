@@ -1,0 +1,17 @@
+go_binary {
+  // Module (and output) name.
+  name: "boodjs",
+
+  // Go package to build.
+  pkg: "github.com/SunRiseGG/ArchitectureLab2/build/cmd/bood",
+  testPkg: "github.com/SunRiseGG/ArchitectureLab2/...",
+
+  // Build inputs.
+  srcs: ["**/*.go", "../go.mod"]
+}
+
+js_bundle {
+    name: "someBood",
+    srcs: ["../examples/foo.js", "../examples/bar.js"],
+    obfuscate: true,
+}

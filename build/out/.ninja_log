@@ -1,0 +1,4 @@
+# ninja log v5
+6	444	1586299090723248279	out/reports/bood/test.txt	4b203361a9df9c33
+0	972	1586299091236581612	out/bin/bood/boodjs	af9e5168f8d0aeb5
+10	1260	1586299091506581611	out/js/bood/someBood.js	18412cd28fb051d4
