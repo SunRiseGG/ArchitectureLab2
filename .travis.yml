@@ -1,0 +1,18 @@
+os: linux
+
+language: go
+
+go: "1.14"
+
+install:
+  - sudo apt-get install npm
+  - sudo npm install webpack -g
+  - . ./.travis.sh
+
+script:
+  - cd $GOPATH/src/github.com/SunRiseGG/ArchitectureLab2/build/out/bin/bood
+  - chmod +x boodjs
+  - cp boodjs ../../../
+  - cd ../../../
+  - ./boodjs
+  - cat ./out/reports/bood/test.txt
